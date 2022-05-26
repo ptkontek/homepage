@@ -1,26 +1,29 @@
 body {
-    background: #cccccc;
+    background: #cad2c5;
 }
 
 .navHeader{
     
 }
 .mainHeader {
-    color: tomato;
+    color: #5E503F;
 }
 .sectionHeader {
-    color: rgba(238, 12, 12, 0.774);
-    font-size: 30px;
-}
-
-.articleHeader {
-    color: rgba(39, 36, 36, 0.774);
+    color: #40916c;
     font-size: 20px;
 }
 
+.articleHeader {
+    color: #0A0908;
+}
+
 .paragraph {
-    color: darkblue;
+    color: 081c15;
     padding: 5px;
+}
+
+.link{
+    color: #31572c;
 }
 
 .img{
@@ -30,7 +33,7 @@ width: 100%;
 
 .footer{
     margin-top: 50px;
-    background: rgb(21, 87, 21);
+    background: #52796f;
     color: white;
     padding: 5px;
 }
