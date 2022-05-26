@@ -1,0 +1,36 @@
+body {
+    background: #cccccc;
+}
+
+.navHeader{
+    
+}
+.mainHeader {
+    color: tomato;
+}
+.sectionHeader {
+    color: rgba(238, 12, 12, 0.774);
+    font-size: 30px;
+}
+
+.articleHeader {
+    color: rgba(39, 36, 36, 0.774);
+    font-size: 20px;
+}
+
+.paragraph {
+    color: darkblue;
+    padding: 5px;
+}
+
+.img{
+width: 100%;
+
+}
+
+.footer{
+    margin-top: 50px;
+    background: rgb(21, 87, 21);
+    color: white;
+    padding: 5px;
+}
