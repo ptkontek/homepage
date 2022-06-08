@@ -2,11 +2,26 @@ body {
     background: #cad2c5;
 }
 
-.navHeader{
+.main{
+    width: 100%;
+    max-width: 700px;
+    /*min-width: 300px;
+    height: 200px;
+   overflow: scroll;
+   width: 50vw; procent w zależności do całej strony, a nie rodzica*/
+    margin: 20px auto;
+    padding-top: 50px;
+    
+}
+.about{
+    position: relative;
+    overflow: hidden;
     
 }
 .mainHeader {
     color: #5E503F;
+    /*height: 20vh;*/
+    margin-bottom: 20px;
 }
 .sectionHeader {
     color: #40916c;
@@ -19,11 +34,13 @@ body {
 
 .paragraph {
     color: 081c15;
-    padding: 5px;
+    padding: 15px 15px;
+    border-bottom: 2px dotted #31572c;
+    /*border-radius: 50%; kółko */
 }
-
-.link{
-    color: #31572c;
+.paragraph1 {
+    color: 081c15;
+    padding: 15px 15px;
 }
 
 .img{
@@ -36,4 +53,60 @@ width: 100%;
     background: #52796f;
     color: white;
     padding: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red ;
+    box-sizing: border-box;
+    /*position: absolute;
+    top: 10px;
+    left: 50%;
+    z-index: 2; wyświetlanie nad innym elementem
+    position: fixed; przyklej element do okna */
+    position: sticky;
+    top: 0;
+}
+
+.top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color:#31572c;
+    
+
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #52796f;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    
+   
+}
+
+.pati{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    float: left;
+    float: right; /*teraz juz nie stosuje się, teraz flex box*/
+    margin: 0 0 0 16px;
+}
+
+.ideas{
+    clear: both;
 }
