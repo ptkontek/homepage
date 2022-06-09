@@ -11,48 +11,12 @@ body {
    width: 50vw; procent w zależności do całej strony, a nie rodzica*/
     margin: 20px auto;
     padding-top: 50px;
-    
 }
-.about{
-    position: relative;
-    overflow: hidden;
-    
-}
-.mainHeader {
+
+/*.mainHeader {
     color: #5E503F;
-    /*height: 20vh;*/
+    height: 20vh;
     margin-bottom: 20px;
-}
-.sectionHeader {
-    color: #40916c;
-    font-size: 20px;
-}
-
-.articleHeader {
-    color: #0A0908;
-}
-
-.paragraph {
-    color: 081c15;
-    padding: 15px 15px;
-    border-bottom: 2px dotted #31572c;
-    /*border-radius: 50%; kółko */
-}
-.paragraph1 {
-    color: 081c15;
-    padding: 15px 15px;
-}
-
-.img{
-width: 100%;
-
-}
-
-.footer{
-    margin-top: 50px;
-    background: #52796f;
-    color: white;
-    padding: 5px;
 }
 
 .box {
@@ -62,24 +26,15 @@ width: 100%;
     padding: 10px;
     border: 10px solid red ;
     box-sizing: border-box;
-    /*position: absolute;
+    position: absolute;
     top: 10px;
     left: 50%;
     z-index: 2; wyświetlanie nad innym elementem
-    position: fixed; przyklej element do okna */
+    position: fixed; przyklej element do okna 
     position: sticky;
     top: 0;
-}
+}*/
 
-.top{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-decoration: none;
-    color:#31572c;
-    
-
-}
 
 .navigation{
     position: fixed;
@@ -91,14 +46,28 @@ width: 100%;
     background: #52796f;
 }
 
-.link{
+.navigation__link{
     text-decoration: none;
     color: white;
-    
-   
 }
 
-.pati{
+
+.about{
+    position: relative;
+    overflow: hidden;
+}
+
+.about__header {
+    color: #40916c;
+    font-size: 24px;
+}
+
+.about__paragraph{
+    color: 081c15;
+    padding: 15px 15px;
+}
+
+.about__picture{
     width: 100%;
     max-width: 500px;
     display: block;
@@ -109,4 +78,48 @@ width: 100%;
 
 .ideas{
     clear: both;
+}
+
+.ideas__header {
+    color: #40916c;
+    font-size: 20px;
+}
+
+.ideas__header-title {
+    font-size: 20px;
+}
+
+
+.ideas__paragraph {
+    color: 081c15;
+    padding: 15px 15px;
+    border-bottom: 2px dotted #31572c;
+    /*border-radius: 50%; kółko */
+}
+
+.ideas__link{
+    text-decoration: none;
+    color:#31572c;  
+}
+
+.footer-img{
+
+}
+
+.footer-img__image{
+    width: 100%;
+}
+.footer{
+    margin-top: 50px;
+    background: #52796f;
+    color: white;
+    padding: 5px;
+}
+
+.footer__top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color:#31572c;  
 }
