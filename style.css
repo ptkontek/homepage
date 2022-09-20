@@ -2,7 +2,7 @@ body {
     background: #cad2c5;
 }
 
-.main{
+.main {
     width: 100%;
     max-width: 700px;
     /*min-width: 300px;
@@ -36,7 +36,7 @@ body {
 }*/
 
 
-.navigation{
+.navigation {
     position: fixed;
     width: 100%;
     top: 0;
@@ -46,13 +46,19 @@ body {
     background: #52796f;
 }
 
-.navigation__link{
+.navigation__link {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    margin-right: 30px;
 }
 
+.navigation__link--homepage {
+    color: #0d2e0a;
+    font-weight: 800;
+}
 
-.about{
+.about {
     position: relative;
     overflow: hidden;
 }
@@ -62,22 +68,24 @@ body {
     font-size: 24px;
 }
 
-.about__paragraph{
+.about__paragraph {
     color: 081c15;
     padding: 15px 15px;
 }
 
-.about__picture{
+.about__picture {
     width: 100%;
     max-width: 500px;
     display: block;
     float: left;
-    float: right; /*teraz juz nie stosuje się, teraz flex box*/
+    float: right;
+    /*teraz juz nie stosuje się, teraz flex box*/
     margin: 0 0 0 16px;
 }
 
-.ideas{
+.ideas {
     clear: both;
+
 }
 
 .ideas__header {
@@ -93,33 +101,42 @@ body {
 .ideas__paragraph {
     color: 081c15;
     padding: 15px 15px;
-    border-bottom: 2px dotted #31572c;
     /*border-radius: 50%; kółko */
 }
 
-.ideas__link{
+.ideas__link {
     text-decoration: none;
-    color:#31572c;  
+    color: #31572c;
+    /*color: inherit; kolor dziedziczony z rodzica*/
 }
 
-.footer-img{
-
+.ideas__list{
+    list-style: square;
 }
 
-.footer-img__image{
+.ideas__article{
+    border-bottom: 2px dotted #31572c;
+    padding-bottom: 10px;
+}
+
+.footer-img {}
+
+.footer-img__image {
     width: 100%;
 }
-.footer{
+
+.footer {
     margin-top: 50px;
     background: #52796f;
     color: white;
     padding: 5px;
+    text-align: center;
 }
 
-.footer__top{
+.footer__top {
     position: fixed;
     bottom: 10px;
     right: 10px;
     text-decoration: none;
-    color:#31572c;  
+    color: #31572c;
 }
