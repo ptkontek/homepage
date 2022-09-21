@@ -119,6 +119,26 @@ body {
     padding-bottom: 10px;
 }
 
+.ideas__table{
+    margin: 20px 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ideas__table td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px 0px;
+}
+
+.ideas__table th {
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid black;
+}
+
+
+
 .footer-img {}
 
 .footer-img__image {
