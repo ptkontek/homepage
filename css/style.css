@@ -62,19 +62,18 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    box-sizing: border-box;
     padding: 15px;
     background: #52796f;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: row ;
+    justify-content: space-around ;
+    align-items: center;
 }
 
 .navigation__link {
     text-decoration: none;
     color: white;
     display: inline-block;
-    margin-right: 30px;
 }
 
 .navigation__link--homepage {
