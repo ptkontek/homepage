@@ -87,6 +87,10 @@ body {
     margin: 12px 15px;
     vertical-align: middle;
 }
+.navigation__link:hover{
+    color: #0d2e0a;
+    font-weight: 800;
+}
 
 .navigation__link--homepage {
     color: #0d2e0a;
@@ -136,6 +140,17 @@ body {
     font-size: 20px;
 }
 
+ .ideas__h2::before, .ideas__h2::after{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #081c15;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin:10px;
+}
+
 .ideas__paragraph {
     color: 081c15;
     padding: 5px 15px;
@@ -146,6 +161,14 @@ body {
     text-decoration: none;
     color: #31572c;
     /*color: inherit; kolor dziedziczony z rodzica*/
+}
+
+.ideas__link:focus {
+    border: 1px solid #31572c;
+}
+
+.ideas__link:visited {
+    color: #414641;
 }
 
 .ideas__list {
@@ -211,10 +234,12 @@ body {
         padding: 50px;
         background: rgb(255, 255, 255, 0.8);
     }
+
     .header {
         background: rgb(255, 255, 255, 0.5);
-        min-height: 50px;  
+        min-height: 50px;
     }
+
     .about {
         padding: 5px;
         position: relative;
@@ -222,8 +247,7 @@ body {
     }
 
     .about__paragraph {
-        display
-        color: 081c15;
+        display color: 081c15;
         padding: 15px 15px;
     }
 
@@ -265,7 +289,8 @@ body {
         color: #0d2e0a;
         font-weight: 800;
     }
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
