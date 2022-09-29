@@ -2,7 +2,6 @@
 <!--jaki rodzaj html-->
 <html lang="pl">
   <!--w jakim języku strona-->
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,21 +12,24 @@
   </head>
 
   <body class="homepage">
-    <header class="navigation">
-      <a class="navigation__link navigation__link--homepage" href="index.html"
-        >Strona główna</a
-      >
-      <a class="navigation__link" href="rower.html">Rower</a>
-      <a class="navigation__link" href="gory.html">Góry</a>
-      <a class="navigation__link" href="namiot.html">Namiot</a>
+    <header class="header">
+      <button class="menu menu--js" aria-label="open menu">MENU</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="rower.html">Rower</a>
+        <a class="navigation__link" href="gory.html">Góry</a>
+        <a class="navigation__link" href="namiot.html">Namiot</a>
+      </nav>
     </header>
+
     <main id="top" class="main">
-      <header class="header">
+      <header>
         <h1 class="header__title header__title--js">
           Patrycja Kontek - Strona domowa
         </h1>
       </header>
-
       <section class="about">
         <!--<div class="box"> Co ten frontend</div>-->
         <h2 class="about__header">Kim jestem?</h2>
@@ -123,8 +125,7 @@
     <script src="/js/main.js"></script>
     <footer class="footer">
       <a href="#top" class="footer__top">Na górę</a>
-      Strona domowa Patrycji Kontek, wszystkie treści są efektem szkolenia WTF:
-      Co ten frontend.
+      Strona domowa Patrycji Kontek.
     </footer>
   </body>
 </html>

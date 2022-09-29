@@ -7,8 +7,8 @@ console.log(`${firstName}
 ${age}`);
 console.log(`Nazywam się ${firstName} i mam ${age} lat.`); //literały
 
-const header = document.querySelector(".header__title--js");
-console.log(header.innerHTML);
+// const header = document.querySelector(".header__title--js");
+// console.log(header.innerHTML);
 //header.innerHTML = `Witaj Drogi Odwiedzający, nazywam się ${firstName} i mam ${age} lat.`;
 
 /*function calculate(myNumber) {
@@ -31,7 +31,7 @@ const greet = (age, firstName) => {
     `Witaj Drogi Odwiedzający, nazywam się ${firstName} i mam ${age} lat.`
   );
 };
-greet(age, firstName); 
+greet(age, firstName);
 
 //const emptyParagraph = document.querySelector(".about__paragraph--js");
 //emptyParagraph.innerHTML = `Uzupełniłam treść javascriptem! To jest sekcja o mnie.`;
@@ -95,3 +95,64 @@ const humanTwo = {
 humanOne.address.street = "Lipowa";
 console.log(humanOne);
 console.log(humanTwo);
+
+if (humanOne.age === humanTwo.age) {
+  ///sprawdza typeof
+  console.log("są równolatkami");
+}
+
+if (null) {
+  console.log("to się nie wykona"); ///false, 0, '', "", ``,null,undefined, Nan - not a number
+}
+
+if ("abc") {
+  console.log("to się wykona"); ///Truthy: 'tekst', 12, -4, {}, [], true itd
+}
+
+if (humanTwo.age === 32 && humanTwo.address) {
+  //or || - jeden warunek prawdą
+  console.log("to się wykona");
+}
+
+if (!false) {
+  ///zaprzeczenie
+  console.log("to się wykona");
+}
+
+if (humanOne.age > humanTwo.age) {
+  console.log("Human One jest starszy");
+} else {
+  console.log("Human Two jest starszy lub są równolatkami");
+}
+
+if (humanOne.age > humanTwo.age) {
+  console.log("Human One jest starszy");
+} else if (humanOne.age === humanTwo.age) {
+  console.log("Są równolatkami");
+} else {
+  console.log("Human Two jest starszy");
+}
+
+const myNumber = 7;
+switch (myNumber) {
+  case 7:
+    console.log("jestem siódemką");
+    break;
+  case 9:
+    console.log("jestem dziewiątką");
+    break;
+  default:
+    console.log("jestem czymś innym");
+}
+///zapis skrócony
+(32 > 20) ? console.log('to prawda') : console.log('to nieprawda');
+
+const result = (32 > 20) ? true : false; //moga byc obiekty i słowa kluczowe zamiast false i true
+console.log(result)
+
+const menu = document.querySelector('.menu--js');
+
+menu.addEventListener('click', () => {
+  const nav = document.querySelector('.navigation--js');
+  nav.classList.toggle('navigation--open')
+})
