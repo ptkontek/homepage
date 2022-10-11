@@ -1,0 +1,24 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx node-sass -w scss/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptkontek/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptkontek/homepage/issues"
+  },
+  "homepage": "https://github.com/ptkontek/homepage#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
