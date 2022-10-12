@@ -1,4 +1,141 @@
 @charset "UTF-8";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+.about {
+  padding: 5px; }
+  .about__header {
+    color: #40916c;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  .about__paragraph {
+    color: #081c15;
+    padding: 15px 0px;
+    margin-bottom: 0px; }
+  .about__picture {
+    margin-bottom: 20px;
+    width: 100%;
+    display: block; }
+
+@media (min-width: 768px) {
+  .about {
+    padding: 5px;
+    overflow: hidden; }
+    .about__paragraph {
+      color: #081c15;
+      padding: 15px 15px; }
+    .about__picture {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      float: left;
+      float: right;
+      /*teraz juz nie stosuje się, teraz flex box*/
+      margin: 0 0 0 16px; } }
+
+.ideas {
+  padding: 5px; }
+  .ideas__header {
+    color: #083a23;
+    font-size: 20px;
+    margin-top: 0px; }
+  .ideas__header-title {
+    font-size: 20px; }
+  .ideas__paragraph {
+    color: 081c15;
+    padding: 5px 15px;
+    /*border-radius: 50%; kółko */ }
+  .ideas__link {
+    text-decoration: none;
+    color: #31572c;
+    /*color: inherit; kolor dziedziczony z rodzica*/ }
+    .ideas__link:focus {
+      border: 1px solid #31572c; }
+    .ideas__link:visited {
+      color: #375a32; }
+  .ideas__list {
+    list-style: square; }
+  .ideas__article {
+    border-bottom: 2px dotted #31572c;
+    padding-bottom: 10px; }
+  .ideas__h2::after, .ideas__h2::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #081c15;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 10px; }
+  .ideas__table {
+    margin: 20px 0px;
+    width: 100%;
+    border-collapse: collapse; }
+  .ideas__table td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px 0px; }
+  .ideas__table th {
+    text-align: center;
+    padding: 10px 0px;
+    border: 1px solid black; }
+
+@media (min-width: 768px) {
+  .ideas {
+    clear: both; } }
+
+.navigation {
+  padding: 16px;
+  display: none; }
+  .navigation--open {
+    display: block;
+    background: #52796f; }
+  .navigation__link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 12px 15px;
+    vertical-align: middle; }
+    .navigation__link:hover {
+      color: #0d2e0a;
+      font-weight: 800; }
+    .navigation__link--homepage {
+      color: #0d2e0a;
+      font-weight: 800; }
+
+@media (min-width: 768px) {
+  .navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    background: #52796f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .navigation__link {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      font-size: 16px; }
+      .navigation__link--homepage {
+        color: #0d2e0a;
+        font-weight: 800; } }
+
+.footer {
+  margin-top: 50px;
+  background: #52796f;
+  color: white;
+  padding: 5px;
+  text-align: center; }
+  .footer__top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #31572c; }
+
 html {
   box-sizing: border-box; }
 
@@ -48,25 +185,6 @@ body {
       position: sticky;
       top: 0;
   }*/
-.navigation {
-  padding: 16px;
-  display: none; }
-  .navigation--open {
-    display: block;
-    background: #52796f; }
-  .navigation__link {
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin: 12px 15px;
-    vertical-align: middle; }
-    .navigation__link:hover {
-      color: #0d2e0a;
-      font-weight: 800; }
-    .navigation__link--homepage {
-      color: #0d2e0a;
-      font-weight: 800; }
-
 .menu {
   position: absolute;
   top: 10px;
@@ -83,84 +201,8 @@ body {
   margin: 30px;
   margin-bottom: 0px; }
 
-.about {
-  padding: 5px; }
-  .about__header {
-    color: #40916c;
-    font-size: 24px;
-    margin-top: 10px;
-    margin-bottom: 0px; }
-  .about__paragraph {
-    color: #081c15;
-    padding: 15px 0px;
-    margin-bottom: 0px; }
-  .about__picture {
-    margin-bottom: 20px;
-    width: 100%;
-    display: block; }
-
-.ideas {
-  padding: 5px; }
-  .ideas__header {
-    color: #083a23;
-    font-size: 20px;
-    margin-top: 0px; }
-  .ideas__header-title {
-    font-size: 20px; }
-  .ideas__paragraph {
-    color: 081c15;
-    padding: 5px 15px;
-    /*border-radius: 50%; kółko */ }
-  .ideas__link {
-    text-decoration: none;
-    color: #31572c;
-    /*color: inherit; kolor dziedziczony z rodzica*/ }
-    .ideas__link:focus {
-      border: 1px solid #31572c; }
-    .ideas__link:visited {
-      color: #375a32; }
-  .ideas__list {
-    list-style: square; }
-  .ideas__article {
-    border-bottom: 2px dotted #31572c;
-    padding-bottom: 10px; }
-  .ideas__h2:after, .ideas__h2:before {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    background: #081c15;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin: 10px; }
-  .ideas__table {
-    margin: 20px 0px;
-    width: 100%;
-    border-collapse: collapse; }
-  .ideas__table td {
-    text-align: center;
-    border: 1px solid black;
-    padding: 3px 0px; }
-  .ideas__table th {
-    text-align: center;
-    padding: 10px 0px;
-    border: 1px solid black; }
-
 .footer-img__image {
   width: 100%; }
-
-.footer {
-  margin-top: 50px;
-  background: #52796f;
-  color: white;
-  padding: 5px;
-  text-align: center; }
-  .footer__top {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    text-decoration: none;
-    color: #31572c; }
 
 @media (min-width: 768px) {
   .main {
@@ -176,41 +218,6 @@ body {
   .header {
     background: rgba(255, 255, 255, 0.5);
     min-height: 50px; }
-  .about {
-    padding: 5px;
-    overflow: hidden; }
-    .about__paragraph {
-      color: #081c15;
-      padding: 15px 15px; }
-    .about__picture {
-      width: 100%;
-      max-width: 500px;
-      display: block;
-      float: left;
-      float: right;
-      /*teraz juz nie stosuje się, teraz flex box*/
-      margin: 0 0 0 16px; }
-  .ideas {
-    clear: both; }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
-  .navigation {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 6px;
-    background: #52796f;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-    .navigation__link {
-      text-decoration: none;
-      color: white;
-      display: inline-block;
-      font-size: 16px; }
-      .navigation__link--homepage {
-        color: #0d2e0a;
-        font-weight: 800; } }
+    grid-template-columns: 1fr 1fr; } }
